@@ -4,14 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    
+    <style>
+        /* Style to center the quiz and make it more visible */
+        .quiz-section {
+            display: flex;
+            justify-content: center;  /* Centers horizontally */
+            align-items: center;      /* Centers vertically */
+            height: 100vh;
+            
+                        /* Full viewport height to center vertically */
+        }
 
-        <!-- Additional CSS Files -->
-        <link rel="stylesheet" href="assets/css/fontawesome.css">
-        <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-        <link rel="stylesheet" href="assets/css/owl.css">
-        <link rel="stylesheet" href="assets/css/lightbox.css">
+        #quiz {
+          background-color: #2d1b54; /* White background with slight transparency */
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* Subtle shadow for emphasis */
+            width: 80%;  /* Responsive width */
+            max-width: 400px;  /* Set a max width for smaller screens */
+            text-align: center; /* Center the content inside */
+            color: white;
+        }
+
+        h2.question {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        button#submit {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button#submit:hover {
+            background-color: #4cae4c;
+        }
+
+        label.option {
+            font-size: 18px;
+            margin-left: 10px;
+            color: white;
+        }
+        label.option:hover{
+          color: green;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <!--header-->
@@ -25,13 +89,13 @@
                 <li><a href="test2.html">Home</a></li>
                 <li class="has-submenu"><a href="#section2">Register/Sign In</a>
                     <ul class="sub-menu">
-                      <li><a href="student-reg.html">As Student</a></li>
-                      <li><a href="teacher-reg.html">As Teacher</a></li>
-                      <li><a href="mentor-reg.html">As Mentor</a></li>
+                        <li><a href="student-reg.html">As Student</a></li>
+                        <li><a href="teacher-reg.html">As Teacher</a></li>
+                        <li><a href="mentor-reg.html">As Mentor</a></li>
                         <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
                     </ul>
                 </li>
-                <li><a href="courses.html">Courses</a></li> <!-- Link to Courses page -->
+                <li><a href="courses.html">Career</a></li> <!-- Link to Courses page -->
                 <li><a href="contact.html">Contact</a></li> <!-- Link to Contact page -->
                 <li><a href="dashboard.html">Scholarship</a></li> <!-- Link to dashboard page -->
                 <li><a href="mentor.html">Mentor</a></li><!-- Link to register page -->
@@ -46,171 +110,39 @@
         </video>
 
         <div class="video-overlay header-text">
-            <div class="caption">
-                <h6>This is the courses page</h6>
-                <h2><em>Courses</em> Page</h2>
-                <div class="main-button">
-                    <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+            <div class="quiz-section">
+                <div id="quiz">
+                    <h2 class="question" id="question">Quiz Question</h2>
+                    <div class="score"></div>
+                    <hr />
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="option_1" />
+                            <label for="option_1" class="option">Option 1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="option_2" />
+                            <label for="option_2" class="option">Option 2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="option_3" />
+                            <label for="option_3" class="option">Option 3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="option_4" />
+                            <label for="option_4" class="option">Option 4</label>
+                        </li>
+                    </ul>
+                    <hr />
+                    <div class="btn">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ***** Main Banner Area End ***** -->
-    <section class="section courses" data-section="section4">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="section-heading">
-                <h2>Choose Your Course</h2>
-              </div>
-            </div>
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="assets/images/courses-01.jpg" alt="Course #1">
-                <div class="down-content">
-                  <h4>Digital Marketing</h4>
-                  <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-01.png" alt="Author 1">
-                  </div>
-                  <div class="text-button-pay">
-                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-02.jpg" alt="Course #2">
-                <div class="down-content">
-                  <h4>Business World</h4>
-                  <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-02.png" alt="Author 2">
-                  </div>
-                  <div class="text-button-free">
-                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-03.jpg" alt="Course #3">
-                <div class="down-content">
-                  <h4>Media Technology</h4>
-                  <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-03.png" alt="Author 3">
-                  </div>
-                  <div class="text-button-pay">
-                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-04.jpg" alt="Course #4">
-                <div class="down-content">
-                  <h4>Communications</h4>
-                  <p>Download free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-04.png" alt="Author 4">
-                  </div>
-                  <div class="text-button-free">
-                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-05.jpg" alt="">
-                <div class="down-content">
-                  <h4>Business Ethics</h4>
-                  <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-05.png" alt="">
-                  </div>
-                  <div class="text-button-pay">
-                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-01.jpg" alt="">
-                <div class="down-content">
-                  <h4>Photography</h4>
-                  <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-01.png" alt="">
-                  </div>
-                  <div class="text-button-free">
-                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-02.jpg" alt="">
-                <div class="down-content">
-                  <h4>Web Development</h4>
-                  <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-02.png" alt="">
-                  </div>
-                  <div class="text-button-free">
-                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-03.jpg" alt="">
-                <div class="down-content">
-                  <h4>Learn HTML CSS</h4>
-                  <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-03.png" alt="">
-                  </div>
-                  <div class="text-button-pay">
-                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-04.jpg" alt="">
-                <div class="down-content">
-                  <h4>Social Media</h4>
-                  <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-04.png" alt="">
-                  </div>
-                  <div class="text-button-pay">
-                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-05.jpg" alt="">
-                <div class="down-content">
-                  <h4>Digital Arts</h4>
-                  <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-05.png" alt="">
-                  </div>
-                  <div class="text-button-free">
-                    <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/images/courses-01.jpg" alt="">
-                <div class="down-content">
-                  <h4>Media Streaming</h4>
-                  <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
-                  <div class="author-image">
-                    <img src="assets/images/author-01.png" alt="">
-                  </div>
-                  <div class="text-button-pay">
-                    <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+    <script src="quiz.js"></script>
 </body>
 </html>
