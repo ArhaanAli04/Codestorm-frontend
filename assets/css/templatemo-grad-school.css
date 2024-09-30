@@ -189,7 +189,9 @@ a.menu-link { display: none; }
     font-style: normal;
     color: #f5a425;
 }
-
+.main-header .logo img{
+  height: 50px;
+}
 .main-menu {
     float: right;
     padding-right: 60px;

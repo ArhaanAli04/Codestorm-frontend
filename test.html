@@ -1,291 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <title>Grad School HTML5 Template</title>
-    
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-<!--
-    
-TemplateMo 557 Grad School
-
-https://templatemo.com/tm-557-grad-school
-
--->
-  </head>
-
-<body>
-
-   
-  <!--header-->
-  <header class="main-header clearfix" role="header">
-    <div class="logo">
-      <a href="#"><em>Grad</em> School</a>
-    </div>
-    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-    <nav id="menu" class="main-nav" role="navigation">
-      <ul class="main-menu">
-        <li><a href="#section1">Home</a></li>
-        <li class="has-submenu"><a href="#section2">About Us</a>
-          <ul class="sub-menu">
-            <li><a href="#section2">Who we are?</a></li>
-            <li><a href="#section3">What we do?</a></li>
-            <li><a href="#section3">How it works?</a></li>
-            <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
-          </ul>
-        </li>
-        <li><a href="#section4">Courses</a></li>
-        <!-- <li><a href="#section5">Video</a></li> -->
-        <li><a href="#section6">Contact</a></li>
-        <li><a href="https://templatemo.com" class="external">External</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ***** Main Banner Area Start ***** -->
-  <section class="section main-banner" id="top" data-section="section1">
-      <video autoplay muted loop id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" />
-      </video>
-
-      <div class="video-overlay header-text">
-          <div class="caption">
-              <h6>Graduate School of Management</h6>
-              <h2><em>Your</em> Classroom</h2>
-              <div class="main-button">
-                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- ***** Main Banner Area End ***** -->
-
-
-  <section class="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-12">
-          <div class="features-post">
-            <div class="features-content">
-              <div class="content-show">
-                <h4><i class="fa fa-pencil"></i>All Courses</h4>
-              </div>
-              <div class="content-hide">
-                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
-                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #fff;
+        }
+        .card {
+            background-color: #2d3748;
+            border: none;
+        }
+        .table {
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container-fluid p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="text-2xl font-bold">Overview</h1>
+            <div class="d-flex align-items-center">
+                <input type="text" placeholder="Search..." class="form-control bg-gray-800 text-white me-2">
+                <span>Apr 17, 2023</span>
             </div>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-4 col-12">
-          <div class="features-post second-features">
-            <div class="features-content">
-              <div class="content-show">
-                <h4><i class="fa fa-graduation-cap"></i>Virtual Class</h4>
-              </div>
-              <div class="content-hide">
-                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
-                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section3">Details</a></div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-12">
-          <div class="features-post third-features">
-            <div class="features-content">
-              <div class="content-show">
-                <h4><i class="fa fa-book"></i>Real Meeting</h4>
-              </div>
-              <div class="content-hide">
-                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
-                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section4">Read More</a></div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section why-us" data-section="section2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-heading">
-            <h2>Why choose Grad School?</h2>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div id='tabs'>
-            <ul>
-              <li><a href='#tabs-1'>Best Education</a></li>
-              <li><a href='#tabs-2'>Top Management</a></li>
-              <li><a href='#tabs-3'>Quality Meeting</a></li>
-            </ul>
-            <section class='tabs-content'>
-              <article id='tabs-1'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-01.png" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Best Education</h4>
-                    <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
-                  </div>
+        <div class="row g-4 mb-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Users</h5>
+                        <p class="card-text fs-4 fw-bold">14k</p>
+                        <p class="card-text text-success">+25% ↑</p>
+                    </div>
                 </div>
-              </article>
-              <article id='tabs-2'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-02.png" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Top Level</h4>
-                    <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> 
-                    <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-                  </div>
-                </div>
-              </article>
-              <article id='tabs-3'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-03.png" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Quality Meeting</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
-                  </div>
-                </div>
-              </article>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-
-  
-  
-
-  <section class="section video" data-section="section5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 align-self-center">
-          <div class="left-content">
-            <span>our presentation is for you</span>
-            <h4>Watch the video to learn more <em>about Grad School</em></h4>
-            <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. You may <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> for details.
-            <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">External URL</a></div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <article class="video-item">
-            <div class="video-caption">
-              <h4>Power HTML Template</h4>
             </div>
-            <figure>
-              <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="assets/images/main-thumb.png"></a>
-            </figure>
-          </article>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Conversions</h5>
+                        <p class="card-text fs-4 fw-bold">325</p>
+                        <p class="card-text text-danger">-25% ↓</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Event count</h5>
+                        <p class="card-text fs-4 fw-bold">200k</p>
+                        <p class="card-text text-success">+5% ↑</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Explore your data</h5>
+                        <p class="card-text">Uncover performance and visitor insights with our data wizardry.</p>
+                        <button class="btn btn-primary mt-2">Get insights</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School  
-          
-           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+        <div class="row g-4 mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sessions</h5>
+                        <p class="card-text text-muted">Sessions per day for the last 30 days</p>
+                        <canvas id="sessionsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Page views and downloads</h5>
+                        <p class="card-text text-muted">Page views and downloads for the last 6 months</p>
+                        <canvas id="pageViewsChart"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Details</h5>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Page Title</th>
+                                <th>Status</th>
+                                <th>Users</th>
+                                <th>Event Count</th>
+                                <th>Views per User</th>
+                                <th>Average Time</th>
+                                <th>Daily Conversions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Homepage Overview</td>
+                                <td><span class="text-success">Online</span></td>
+                                <td>212423</td>
+                                <td>8345</td>
+                                <td>18.5</td>
+                                <td>2m 15s</td>
+                                <td>
+                                    <div class="progress" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info d-flex align-items-center" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <div>
+                Plan about to expire. Enjoy 10% off when renewing your plan today.
+                <button class="btn btn-primary btn-sm ms-2">Get the discount</button>
+            </div>
+        </div>
     </div>
-  </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
-
-        var showSection = function showSection(section, isAnimate) {
-          var
-          direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top - 0;
-
-          if (isAnimate) {
-            $('body, html').animate({
-              scrollTop: reqSectionPos },
-            800);
-          } else {
-            $('body, html').scrollTop(reqSectionPos);
-          }
-
-        };
-
-        var checkSection = function checkSection() {
-          $('.section').each(function () {
-            var
-            $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
-              currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-              reqLink.closest('li').addClass('active').
-              siblings().removeClass('active');
+        // Sessions Chart
+        const sessionsCtx = document.getElementById('sessionsChart').getContext('2d');
+        new Chart(sessionsCtx, {
+            type: 'line',
+            data: {
+                labels: ['Apr 5', 'Apr 10', 'Apr 15', 'Apr 20', 'Apr 25', 'Apr 30'],
+                datasets: [{
+                    label: 'Sessions',
+                    data: [2000, 4000, 6000, 8000, 10000, 13277],
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
             }
-          });
-        };
-
-        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-          if($(e.target).hasClass('external')) {
-            return;
-          }
-          e.preventDefault();
-          $('#menu').removeClass('active');
-          showSection($(this).attr('href'), true);
         });
 
-        $(window).scroll(function () {
-          checkSection();
+        // Page Views Chart
+        const pageViewsCtx = document.getElementById('pageViewsChart').getContext('2d');
+        new Chart(pageViewsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                datasets: [{
+                    label: 'Views',
+                    data: [9000, 8000, 7000, 9000, 11000, 7000, 6500],
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)'
+                },
+                {
+                    label: 'Downloads',
+                    data: [1000, 2000, 1500, 2000, 2500, 1500, 1000],
+                    backgroundColor: 'rgba(153, 102, 255, 0.6)'
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
         });
     </script>
 </body>

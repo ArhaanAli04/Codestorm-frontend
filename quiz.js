@@ -70,7 +70,7 @@ const [questionElm, option_l, option_2, option_3, option_4] =
  const submitBtn = document.querySelector("#submit");
 
    let currentQuiz = 0;
-   let score = 0;
+   let score = 0+Math.floor(Math.random()*50);
    // Courses based on the score
 const courses = [
   "Software Engineering",
@@ -125,8 +125,8 @@ score = score + 1;
     deselectedAnswers();
     loadQuiz();
   } else {
-    const maxScore=quizData.length;
-    const percentageScore=(score/maxScore)*100;
+    let maxScore=quizData.length;
+    let percentageScore=(score/maxScore)*100;
     let suggestedCourse = "Undecided";
     if (percentageScore >= 80) {
       suggestedCourse = courses[0];

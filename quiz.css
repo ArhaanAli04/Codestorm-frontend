@@ -178,7 +178,12 @@ button {
 
 }
 
-.result h2,
+.result h2{
+    background-color: black;
+}
+.result button{
+    border: solid rgb(247, 234, 234) 5px;
+}
 
 .score {
 
